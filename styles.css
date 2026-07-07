@@ -18,7 +18,7 @@
    ============================================================ */
 
 
-/* ---------- THEME 1: GRAPHITE (default) ---------- */
+/*---------- THEME 1: GRAPHITE (default) ----------
 :root {
   --bg:           #f4f0e8;
   --bg-alt:       #ebe6dc;
@@ -30,7 +30,6 @@
   --accent-soft:  #f0d8d4;
   --paper-grain:  rgba(0, 0, 0, 0.018);
 }
-*/
 
 /* ---------- THEME 2: ATLAS ----------
 :root {
@@ -58,6 +57,7 @@
   --accent-soft:  #dbe5c8;
   --paper-grain:  rgba(0, 0, 0, 0.02);
 }
+
 
 /* ---------- THEME 4: NOCTURNE ----------
 :root {
