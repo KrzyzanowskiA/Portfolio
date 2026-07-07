@@ -73,7 +73,7 @@
 }
 */
 
- ---------- THEME 5: RISOGRAPH ----------
+/* ---------- THEME 5: RISOGRAPH ----------
 :root {
   --bg:           #f5f1ea;
   --bg-alt:       #ece6db;
@@ -84,6 +84,20 @@
   --accent:       #e23e1f;
   --accent-soft:  #fbd7cf;
   --paper-grain:  rgba(0, 0, 0, 0.022);
+}
+*/
+
+ ---------- THEME 6: CUSTOM ----------
+:root {
+  --bg:           #C2D6A6;
+  --bg-alt:       #B3C993;
+  --ink:          #4B3D2A;
+  --ink-soft:     #455342;
+  --ink-faint:    #68553B;
+  --rule:         #c9c8b1;
+  --accent:       #577033;
+  --accent-soft:  #dbe5c8;
+  --paper-grain:  rgba(0, 0, 0, 0.02);
 }
 
 
