@@ -23,11 +23,11 @@ const CONFIG = {
 
   name: "Anna Krzyzanowski",
   tagline: "Sophmore at the University of Richmond",
-  location: "Richmond, Virginia",
+  location: "Yorktown, Virginia",
 
   email:    "anna.krzyzanowski@richmond.edu",
-  github:   "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
+  github:   "https://github.com/KrzyzanowskiA",
+  linkedin: "https://linkedin.com/in/anna-krzyzanowski",
   website:  "",   // leave as "" to hide
 
   headshot: "images/headshot.svg",
@@ -39,7 +39,7 @@ const CONFIG = {
   // =========================================================
 
   shortBio: `Senior at the University of Richmond studying Geography
-             and Data Science, focused on open spatial data, community
+            and Data Science, focused on open spatial data, community
              cartography, and making maps that answer real questions.`,
 
 
