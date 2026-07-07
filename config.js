@@ -21,11 +21,11 @@ const CONFIG = {
   // BASICS — name, contact, headshot
   // =========================================================
 
-  name: "Jane Cartographer",
-  tagline: "GIS Analyst & Community-Engaged Cartographer",
+  name: "Anna Krzyzanowski",
+  tagline: "Sophmore at the University of Richmond",
   location: "Richmond, Virginia",
 
-  email:    "jane.cartographer@example.com",
+  email:    "anna.krzyzanowski@richmond.edu",
   github:   "https://github.com/yourusername",
   linkedin: "https://linkedin.com/in/yourusername",
   website:  "",   // leave as "" to hide
