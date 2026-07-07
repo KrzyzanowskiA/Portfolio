@@ -105,11 +105,11 @@
 :root {
   --bg:           #c4cfe0;
   --bg-alt:       #aec0db;
-  --ink:          #343E1E;
-  --ink-soft:     #202711;
+  --ink:          #221432;
+  --ink-soft:     #180e24;
   --ink-faint:    #8a8a8a;
   --rule:         #d6cfc0;
-  --accent:       #e23e1f;
+  --accent:       #c7c2e2;
   --accent-soft:  #fbd7cf;
   --paper-grain:  rgba(0, 0, 0, 0.022);
 }
