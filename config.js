@@ -22,7 +22,7 @@ const CONFIG = {
   // =========================================================
 
   name: "Anna Krzyzanowski",
-  tagline: "Sophmore at the University of Richmond",
+  tagline: "Sophomore at the University of Richmond",
   location: "Yorktown, Virginia",
 
   email:    "anna.krzyzanowski@richmond.edu",
