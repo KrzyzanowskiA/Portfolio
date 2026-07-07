@@ -48,25 +48,15 @@ const CONFIG = {
   // To split into paragraphs, use \n\n between them.
   // =========================================================
 
-  longBio: `I am a senior at the University of Richmond studying Geography
-            and Data Science. My work focuses on using open spatial data
-            to answer questions that communities are actually asking.
+  longBio: `I am a sophomore at the University of Richmond studying Geography, Data Science, and Biology. My goal is to use spatial data and analysis to answer the questions communities are asking.
 
-            In 2024 I interned with the City of Richmond's Office of
-            Sustainability, where I built a series of tree-equity
-            dashboards now used by neighborhood groups to advocate for
-            plantings on underserved blocks. I have also worked on a
-            statistical analysis of margins of error in American
-            Community Survey data, a project I am co-authoring with
-            two faculty members at UR.
+In 2026, I was a Summer Research Fellow in the University of Richmond’s Spatial Analysis Lab, where I worked on a web application showcasing the changes along Second Street in Jackson Ward, Richmond, Virginia. The app will be featured at the Black History Museum & Culture Center of Virginia. Alongside this, we’re studying how land change use along the street has changed over time, tracking how parcel use changed over time, which we’re presenting as a poster at upcoming conferences. 
 
-            Outside of GIS, I write a small newsletter about urban
-            history in the upper South, and I am slowly teaching
-            myself to make decent sourdough.
 
-            I am graduating in May 2026 and am looking for full-time
-            roles in spatial analysis, planning support, or applied
-            research.`,
+Outside of GIS, I dabble in photography (I have an unreasonable number of photos of the campus squirrels), watercolor, and writing short stories.
+
+For the summer of 2027 I am looking for an internship in spatial analysis, cartography, or  planning.
+`,
 
 
   // =========================================================
