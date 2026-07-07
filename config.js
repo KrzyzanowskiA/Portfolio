@@ -67,9 +67,9 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
   education: [
     {
       school: "University of Richmond",
-      degree: "B.A., Geography & Data Science",
-      year:   "Expected May 2026",
-      note:   "Honors thesis on canopy equity in Richmond"
+      degree: "B.A., Geography",
+      year:   "Expected May 2029",
+   
     },
     // Add high school, study abroad, certificate programs, etc. here
     // {
@@ -89,14 +89,14 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
     {
       role:    "Undergraduate Research Fellow",
       org:     "Spatial Analysis Lab, University of Richmond",
-      years:   "2024 - present",
-      blurb:   "Lead a small team on ACS uncertainty analysis under Dr. Plaxco."
+      years:   "Summer 2026",
+      blurb:   "Worked on change along Second Street Jackson Ward."
     },
     {
-      role:    "GIS Intern",
-      org:     "City of Richmond, Office of Sustainability",
-      years:   "Summer 2024",
-      blurb:   "Built tree-equity dashboards now used by neighborhood groups."
+      role:    "Mosquito Control Intern",
+      org:     "York County, Mosquito Control",
+      years:   "Summer 2025",
+      blurb:   "Trapped, tested, and identified 32 species of mosquito while also working on community outreach."
     },
   ],
 
@@ -109,19 +109,19 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
   skillGroups: [
     {
       label: "Desktop GIS",
-      skills: ["ArcGIS Pro", "QGIS", "ArcGIS Online"]
+      skills: ["ESRI Ecosystem ((ArcGIS Pro, AGOL, Instant Apps, Storymaps, Dashboards, Field Maps)", "Open Street Map"]
     },
     {
-      label: "Programming",
-      skills: ["Python", "R", "SQL", "JavaScript (basic)"]
+      label: "Office Suites",
+      skills: ["Microsoft", "Google Suite"]
     },
     {
-      label: "Web mapping",
-      skills: ["Leaflet", "MapLibre GL JS", "Mapbox Studio"]
+      /*label: "Web mapping",
+      skills: ["Leaflet", "MapLibre GL JS", "Mapbox Studio"] */
     },
     {
-      label: "Data & databases",
-      skills: ["PostGIS", "Pandas", "GeoPandas", "Tableau"]
+      label: "Media Editing",
+      skills: ["Adobe Suite"]
     },
   ],
 
