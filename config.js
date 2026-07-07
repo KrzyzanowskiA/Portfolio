@@ -38,9 +38,8 @@ const CONFIG = {
   // 1-2 sentences. Keep it punchy.
   // =========================================================
 
-  shortBio: `Senior at the University of Richmond studying Geography
-            and Data Science, focused on open spatial data, community
-             cartography, and making maps that answer real questions.`,
+  shortBio: `Sophomore at the University of Richmond studying Geography, Data Science, and Biology interested in ecology and using spatial
+  and data skills to work alongside local communities.`,
 
 
   // =========================================================
