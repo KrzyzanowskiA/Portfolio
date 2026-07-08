@@ -145,7 +145,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
 
     {
       slug:        "tree-equity",
-      title:       "Second Street Web Application",
+      title:       "Second Street Through Time",
       year:        "2026",
       type:        "Community Mapping",
       thumbnail:   "images/projects/tree-equity-thumb.svg",
