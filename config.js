@@ -145,14 +145,13 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
 
     {
       slug:        "tree-equity",
-      title:       "Tree Equity in Jackson Ward",
-      year:        "2025",
+      title:       "Second Street Web Application",
+      year:        "2026",
       type:        "Community Mapping",
       thumbnail:   "images/projects/tree-equity-thumb.svg",
-      blurb:       `A block-by-block analysis of canopy gaps in a historically
-                    redlined Richmond neighborhood, built with the Historic
-                    Jackson Ward Association.`,
-      tags:        ["ArcGIS Pro", "Python", "MapLibre", "Community-Engaged"],
+      blurb:       `A web application showcasing the changing streetscape of Second Street within the Jackson Ward neighborhood,
+      created with the Historic Jackson Ward Association.`,
+     /* tags:        ["ArcGIS Pro", "Python", "MapLibre", "Community-Engaged"],*/
       detailPage:  "project-tree-equity.html",
       featured:    true,
     },
