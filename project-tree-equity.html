@@ -7,7 +7,7 @@
 <!-- ============================================================ -->
 <!-- EDIT THIS: The page title that shows in the browser tab.     -->
 <!-- ============================================================ -->
-<title data-page="Tree Equity in Jackson Ward">Loading...</title>
+<title data-page="Second Street Web Application">Loading...</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,17 +35,17 @@
 
   <!-- PROJECT HEAD -->
   <section class="project-head">
-    <p class="page-eyebrow">Case study · 2025</p>
-    <h1 class="page-title">Tree Equity in Jackson Ward</h1>
+    <p class="page-eyebrow">Case study · 2026</p>
+    <h1 class="page-title">Second Street Web Application</h1>
     <p class="project-subtitle">
-      A block-by-block canopy analysis built with the Historic Jackson Ward
-      Association, now used by city arborists to prioritize plantings.
+      A web application showcasing the changing streetscape of Second Street within the Jackson Ward neighborhood,
+       created with the Historic Jackson Ward Association.
     </p>
     <ul class="project-meta-row">
-      <li><span class="meta-label">Role</span><span class="meta-value">Lead analyst</span></li>
-      <li><span class="meta-label">Partners</span><span class="meta-value">HJWA, City of Richmond</span></li>
-      <li><span class="meta-label">Timeline</span><span class="meta-value">Summer 2024 - Spring 2025</span></li>
-      <li><span class="meta-label">Tools</span><span class="meta-value">ArcGIS Pro, Python, MapLibre</span></li>
+      <li><span class="meta-label">Role</span><span class="meta-value">Student Researcher</span></li>
+      <li><span class="meta-label">Partners</span><span class="meta-value">HJWA</span></li>
+      <li><span class="meta-label">Timeline</span><span class="meta-value">Summer 2026 - Present</span></li>
+      <li><span class="meta-label">Tools</span><span class="meta-value">ArcGIS Pro, HTML, MapLibre</span></li>
     </ul>
   </section>
 
@@ -71,35 +71,25 @@
 
     <h2 class="prose-h2">The question</h2>
     <p>
-      Jackson Ward is one of the most historically significant Black
-      neighborhoods in the American South, and like many redlined
-      neighborhoods, it has roughly half the tree canopy of
-      whiter-and-wealthier blocks just a few minutes' drive away.
-      The Historic Jackson Ward Association had been advocating for
-      a planting program but lacked a block-by-block picture of where
-      the gap was largest.
+      Second Street was the heart of the Jackson Ward neighborhood in Richmond, Virginia.
+      The street became a commercial corridor having financial institutions, insurance companies, and personal offices.
+      Due to I-95 construction going right through the neighborhood and desegregation, the street started to become more and more vacant.
+
     </p>
     <p>
-      I joined the project in summer 2024 to build that picture and
-      to design something the association could actually take into
-      city council meetings.
+      This project aimed to showcase what Second Street used to be and help educate people on its important history.
     </p>
 
     <h2 class="prose-h2">What I did</h2>
     <p>
-      I started by stitching together three years of LIDAR-derived
-      canopy data from VGIN with the city's parcel layer. The first
-      challenge was that the canopy raster did not line up cleanly
-      with the parcel polygons, so I built a zonal-statistics pipeline
-      in Python that handled the snapping and computed canopy percent
-      per parcel.
+      I started this project by georeferencing and drawing out parcels on old Sanborn and city planning maps.
+      Then, I joined over directory data to see where businesses, residences, and institutions were located on the street.
+      We then selected POIs for each of the six eras to highlight some noteworthy locations located on Second Street.
+
     </p>
     <p>
-      From there I aggregated to the block level, computed deviation
-      from the citywide median, and ranked blocks by gap size weighted
-      by population density. The HJWA team and I went through the
-      top-30 list together and adjusted for places where a planting
-      would not actually be feasible (an alley, a railroad cut).
+      We then started working on a web application to create an interactive visual for people to use.
+      We loaded in the basemaps as a tile layer and the parcels and POIs as GeoJSONS. 
     </p>
 
     <!-- Inline supporting image -->
@@ -111,21 +101,17 @@
 
     <h2 class="prose-h2">What I found</h2>
     <p>
-      The ten highest-priority blocks are all in the eastern half of
-      the neighborhood, concentrated around 2nd Street. Three of them
-      have less than 4% canopy, against a citywide median of 21%. The
-      final report is now in the hands of the city's urban forestry
-      office, and the first round of plantings happened in November 2024.
+      From this app we were able to observe how the streetscape changed over different eras.
+      Starting off as mainly residential, changing to majority commercial, and to today’s layout.
+      The web application allows people to see this change and how I-95 splitting Second Street was detrimental to businesses. 
     </p>
 
     <h2 class="prose-h2">What I learned</h2>
     <p>
-      The technical analysis turned out to be the easy part. The
-      harder and more interesting part was learning how to present
-      uncertainty to community members who needed to use the results
-      to advocate. The "ranked list" worked far better than the
-      heatmap for that audience, even though the heatmap was the
-      more sophisticated artifact.
+      Though none of the GIS concepts used in this project were new to me, I learned lots of new things.
+      Through working on the web application, I had my first exposure to coding.
+      More importantly, this project taught me the importance of working with a community on things that are important to them.
+
     </p>
 
   </section>
@@ -139,16 +125,15 @@
     </div>
     <ul class="link-list">
       <li>
-        <a href="#" class="link-primary">Interactive map →</a>
-        <span class="link-note">Public web map hosted on GitHub Pages.</span>
+        <a href="https://redican.github.io/SecondStreetApplication/jackson_ward_maplibre_v10.html" class="link-primary">Web application →</a>
+        <span class="link-note">Application hosted on GitHub Pages.</span>
       </li>
       <li>
-        <a href="#" class="link-primary">GitHub repo →</a>
-        <span class="link-note">Python pipeline, data, and notebooks.</span>
+        <a href="https://github.com/redican/SecondStreetApplication" class="link-primary">GitHub repo →</a>
+        <span class="link-note">HTML pipeline and GeoJSONs.</span>
       </li>
       <li>
-        <a href="#" class="link-primary">Final report (PDF) →</a>
-        <span class="link-note">12-page summary written for HJWA leadership.</span>
+    
       </li>
     </ul>
   </section>
