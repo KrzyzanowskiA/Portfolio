@@ -158,13 +158,11 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
 
     {
       slug:        "acs-uncertainty",
-      title:       "Hidden Uncertainty in ACS Health Data",
-      year:        "2025",
-      type:        "Spatial Statistics",
+      title:       "Analysis",
+      year:        "2025-2026",
+      type:        "Spatial Analysis",
       thumbnail:   "images/projects/acs-uncertainty-thumb.svg",
-      blurb:       `A simulation study showing how margins of error in
-                    American Community Survey estimates propagate through
-                    public-health risk models.`,
+      blurb:       `Different analyses maps using skills used in my Advanced GIScience course.`,
       tags:        ["R", "GLM", "Monte Carlo", "Research"],
       detailPage:  "project-acs-uncertainty.html",
       featured:    true,
