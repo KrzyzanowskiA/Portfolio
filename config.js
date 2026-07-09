@@ -161,7 +161,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
       title:       "Analysis",
       year:        "2025-2026",
       type:        "Spatial Analysis",
-      thumbnail:   "images/projects/acs-uncertainty-thumb.svg",
+      thumbnail:   "https://drive.google.com/file/d/19TiTXAmYnHd-E8CZT8QTsDqzwmy_z6CW/view?usp=sharing",
       blurb:       `Different analyses maps using skills used in my Advanced GIScience course.`,
       tags:        ["R", "GLM", "Monte Carlo", "Research"],
       detailPage:  "project-acs-uncertainty.html",
