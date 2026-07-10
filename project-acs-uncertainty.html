@@ -8,6 +8,65 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+  <style>
+  .gallery-viewport {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #111;
+  }
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  .gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+  }
+  .gallery-arrow:hover { background: rgba(0,0,0,0.7); }
+  .gallery-prev { left: 12px; }
+  .gallery-next { right: 12px; }
+  .gallery-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+  }
+  .gallery-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+  }
+  .gallery-dot.active { background: #fff; }
+  .gallery-caption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
 
@@ -24,8 +83,23 @@
 
   <section class="project-hero">
     <figure>
-      <img src="images/projects/acs-uncertainty-thumb.svg" alt="Forest plot of health rate estimates" />
-      <figcaption>Forest plot of estimate uncertainty across seven health indicators.</figcaption>
+      <img src="GWRNewGreenCropped copy.jpg" alt="GWR Analysis looking at MHI in the United States with exploratory variables of vetran status, 
+        percent of population under 18, employed, and holds a bachelor's degree or higher." />
+      <figcaption>Geographically weighted regression analysis looking at Median Household Income using four exploratory variables.</figcaption>
+    </figure>
+  </section>
+
+   </section>
+  <section class="project-gallery">
+    <h2 class="prose-h2">Gallery</h2>
+    <figure class="gallery" id="acs-gallery">
+      <div class="gallery-viewport">
+        <img class="gallery-image" src="SplineNewCropped.jpg" alt="Map of margin of error by tract">
+        <button class="gallery-arrow gallery-prev" aria-label="Previous photo">&#10094;</button>
+        <button class="gallery-arrow gallery-next" aria-label="Next photo">&#10095;</button>
+        <div class="gallery-dots"></div>
+      </div>
+      <figcaption class="gallery-caption">Map of margin of error by tract.</figcaption>
     </figure>
   </section>
 
@@ -35,7 +109,6 @@
       This case study is still being written. In the meantime, see the
       preprint and the code repository linked below.
     </p>
-  </section>
 
   <section class="project-back">
     <a href="projects.html" class="link-primary">← Back to all work</a>
@@ -45,5 +118,40 @@
 <footer id="site-footer" class="site-footer"></footer>
 <script src="config.js"></script>
 <script src="components.js"></script>
+  <script>
+  document.querySelectorAll('.gallery').forEach(gallery => {
+    const images = [
+      { src: 'images/projects/acs-uncertainty-02.jpg', caption: 'Map of margin of error by tract.' },
+      { src: 'images/projects/acs-uncertainty-03.jpg', caption: 'Comparison across ACS vintages.' },
+      { src: 'images/projects/acs-uncertainty-04.jpg', caption: 'Uncertainty by demographic subgroup.' }
+      // add more entries here — each one gets its own caption automatically
+    ];
+
+    let index = 0;
+    const img = gallery.querySelector('.gallery-image');
+    const caption = gallery.querySelector('.gallery-caption');
+    const dotsWrap = gallery.querySelector('.gallery-dots');
+
+    images.forEach((_, i) => {
+      const dot = document.createElement('span');
+      dot.className = 'gallery-dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', () => show(i));
+      dotsWrap.appendChild(dot);
+    });
+
+    function show(i) {
+      index = (i + images.length) % images.length;
+      img.src = images[index].src;
+      img.alt = images[index].caption;
+      caption.textContent = images[index].caption;
+      dotsWrap.querySelectorAll('.gallery-dot').forEach((d, di) =>
+        d.classList.toggle('active', di === index)
+      );
+    }
+
+    gallery.querySelector('.gallery-prev').addEventListener('click', () => show(index - 1));
+    gallery.querySelector('.gallery-next').addEventListener('click', () => show(index + 1));
+  });
+</script>
 </body>
 </html>
