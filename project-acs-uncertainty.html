@@ -115,8 +115,9 @@
       <figcaption class="gallery-caption">Comparison of the RVA DEM to a tension and regularized spline.</figcaption>
     </figure>
   </section>
-
-  <figure class="prose-figure"> Bivariate Map
+  
+<h2 class="prose-h2">Bivariate Map</h2>
+  <figure class="prose-figure"> Map showing the overlap between those with a bachelor's degree or higher and veteran status in Washington D.C.
       <img src="BivariateNewCropped.jpg"
            alt="Map of the coefficient values for each variable used the the GWR." />
       <figcaption>Overlap in DC between higher education and veteran status.</figcaption>
@@ -146,18 +147,21 @@
 <script src="config.js"></script>
 <script src="components.js"></script>
   <script>
-  document.querySelectorAll('.gallery').forEach(gallery => {
-   const galleryData = {
+  const galleryData = {
     'acs-gallery': [
       { src: 'SplineNewCropped.jpg', caption: 'Comparison of the RVA DEM to a tension and regularized spline.' },
       { src: 'KrigingNewWNeatCropped.jpg', caption: 'Comparison of RVA DEM to kriging model.' },
-      { src: 'IDW4NewCropped.jpg', caption: 'Comparison of RVA DEM andInverse Distance Weighted 4.' }
-      // add more entries here — each one gets its own caption automatically
+      { src: 'IDW4NewCropped.jpg', caption: 'Comparison of RVA DEM and Inverse Distance Weighted 4.' }
     ],
     'gwr-gallery': [
       { src: 'LayoutMoransNewCropped.jpg', caption: 'Local Morans I analysis using different neighborhood definitions.' },
-      { src: 'GetisNewCropped.jpg', caption: 'Getis-Ord GI* analysis using different neighborhood definitions.' },
+      { src: 'GetisNewCropped.jpg', caption: 'Getis-Ord GI* analysis using different neighborhood definitions.' }
     ]
+  };
+
+  document.querySelectorAll('.gallery').forEach(gallery => {
+    const images = galleryData[gallery.id];
+    if (!images || images.length === 0) return;
 
     let index = 0;
     const img = gallery.querySelector('.gallery-image');
