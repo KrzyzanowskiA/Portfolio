@@ -3,35 +3,182 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-page="Where the Crashes Cluster">Loading...</title>
+<title data-page="Analysis Maps">Loading...</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+  <style>
+    
+.prose-figure {
+  margin: 2rem auto;
+}
+
+.prose-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.prose-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+  .gallery-viewport {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 8px;
+    background: transparent;
+  }
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+  .gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+  }
+  .gallery-arrow:hover { background: rgba(0,0,0,0.7); }
+  .gallery-prev { left: 12px; }
+  .gallery-next { right: 12px; }
+  .gallery-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+  }
+  .gallery-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+  }
+  .gallery-dot.active { background: #fff; }
+  .gallery-caption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
+
 <header id="site-header" class="site-header"></header>
+
 <main>
   <section class="project-head">
-    <p class="page-eyebrow">Case study</p>
-    <h1 class="page-title">Where the Crashes Cluster</h1>
-    <p class="project-subtitle">A kernel density analysis of traffic-accident data in Gainesville, Florida.</p>
+    <p class="page-eyebrow">Case study · 2026</p>
+    <h1 class="page-title">Location allocation and Network analysis</h1>
+    <p class="project-subtitle">
+     A network analysis and location allocation for pizzeria locations in Giles county, Virginia, and where a new location should go.
+    </p>
   </section>
-  <section class="project-hero">
+
+  <section class="project-hero"> Location Allocation for new pizzeria
+    <p class="prose-p">By using demand points and current pizzeria locations, a location for the new pizzeria, Quintiloni Pizzeria, was chosen. Analysis done using Minimized Weight P-Median and a cutoff of 15.
     <figure>
-      <img src="images/projects/kde-traffic-thumb.svg" alt="Where the Crashes Cluster" />
+      <img src="LocationAllocationCropped.jpg" alt="Map showing the current pizzerias, where a new one should go, and demand points withing Giles county, Virginia." />
+      <figcaption>Location of pizzerias and demand points they cover when Quintiloni Pizzeria is added.</figcaption>
     </figure>
   </section>
-  <section class="project-prose">
-    <h2 class="prose-h2">Coming soon</h2>
-    <p>This case study is still being written.</p>
-  </section>
+
+<section class="project-gallery">
+  <h2 class="prose-h2">Fiften Minute Delivery Zones</h2>
+  <p class="prose-p">Map showing the overlap between those with a bachelor's degree or higher and veteran status in Washington D.C.</p>
+  <figure class="prose-figure">
+      <img src="FifteenMinZonesjpgCropped.jpg"
+           alt="Pizzerias and their 15 minute delivery zones across the county." />
+      <figcaption>15 minute delivery zones for existing delivery zones in Giles county, Virginia. Note: Does not accuratly show off 15 minute delivery zones as shapefile on contains main roads. </figcaption>
+  </figure>
+</section>
+
+  <section class="project-gallery">
+  <h2 class="prose-h2">Pizzeria Max Coverage</h2>
+  <p class="prose-p">Optimal location for six pizzerias in Giles county, Virginia, to cover as many demand points as possible within 15 minutes.</p>
+  <figure class="prose-figure">
+      <img src="MaxCoverageNewCropped.jpg"
+           alt="Map of the demand points covered by six new optimally placed pizzerias." />
+      <figcaption>Six optimally placed pizzerias in Giles county, Virginia and the demand points they cover. </figcaption>
+  </figure>
+</section>
+
+  
+
   <section class="project-back">
     <a href="projects.html" class="link-primary">← Back to all work</a>
   </section>
 </main>
+
 <footer id="site-footer" class="site-footer"></footer>
 <script src="config.js"></script>
 <script src="components.js"></script>
+  <script>
+  const galleryData = {
+    'acs-gallery': [
+      { src: 'SplineNewCropped.jpg', caption: 'Comparison of the RVA DEM to a tension and regularized spline.' },
+      { src: 'KrigingNewWNeatCropped.jpg', caption: 'Comparison of RVA DEM to kriging model.' },
+      { src: 'IDW4NewCropped.jpg', caption: 'Comparison of RVA DEM and Inverse Distance Weighted 4.' }
+    ],
+    'gwr-gallery': [
+      { src: 'LayoutMoransNewCropped.jpg', caption: 'Local Morans I analysis using different neighborhood definitions.' },
+      { src: 'GetisNewCropped.jpg', caption: 'Getis-Ord GI* analysis using different neighborhood definitions.' }
+    ]
+  };
+
+  document.querySelectorAll('.gallery').forEach(gallery => {
+    const images = galleryData[gallery.id];
+    if (!images || images.length === 0) return;
+
+    let index = 0;
+    const img = gallery.querySelector('.gallery-image');
+    const caption = gallery.querySelector('.gallery-caption');
+    const dotsWrap = gallery.querySelector('.gallery-dots');
+
+    images.forEach((_, i) => {
+      const dot = document.createElement('span');
+      dot.className = 'gallery-dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', () => show(i));
+      dotsWrap.appendChild(dot);
+    });
+
+    function show(i) {
+      index = (i + images.length) % images.length;
+      img.src = images[index].src;
+      img.alt = images[index].caption;
+      caption.textContent = images[index].caption;
+      dotsWrap.querySelectorAll('.gallery-dot').forEach((d, di) =>
+        d.classList.toggle('active', di === index)
+      );
+    }
+
+    gallery.querySelector('.gallery-prev').addEventListener('click', () => show(index - 1));
+    gallery.querySelector('.gallery-next').addEventListener('click', () => show(index + 1));
+  });
+</script>
 </body>
-</html>
+</html></html>
