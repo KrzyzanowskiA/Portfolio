@@ -11,8 +11,21 @@
   <style>
     
 .prose-figure {
-  max-width: 900px;
   margin: 2rem auto;
+}
+
+.prose-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.prose-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
 }
   .gallery-viewport {
     position: relative;
@@ -117,11 +130,12 @@
   </section>
   
 <h2 class="prose-h2">Bivariate Map</h2>
-  <figure class="prose-figure"> Map showing the overlap between those with a bachelor's degree or higher and veteran status in Washington D.C.
-      <img src="BivariateNewCropped.jpg"
-           alt="Map of the coefficient values for each variable used the the GWR." />
-      <figcaption>Overlap in DC between higher education and veteran status.</figcaption>
-    </figure>
+<p class="prose-p">Map showing the overlap between those with a bachelor's degree or higher and veteran status in Washington D.C.</p>
+<figure class="prose-figure">
+    <img src="BivariateNewCropped.jpg"
+         alt="Map of the coefficient values for each variable used the the GWR." />
+    <figcaption>Overlap in DC between higher education and veteran status.</figcaption>
+</figure>
 
   <section class="project-gallery">
     <h2 class="prose-h2">Hot Spot Analysis</h2>
