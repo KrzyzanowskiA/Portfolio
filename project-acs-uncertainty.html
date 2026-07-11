@@ -87,6 +87,7 @@
   </section>
 
   <section class="project-hero"> Geographically Weighted Regression
+    <p class="prose-p">Local model coefficients and R-squared values for a GWR model predicting median household income.
     <figure>
       <img src="GWRNewGreenCropped.jpg" alt="GWR Analysis looking at MHI in the United States with exploratory variables of vetran status, 
         percent of population under 18, employed, and holds a bachelor's degree or higher." />
@@ -115,12 +116,26 @@
     </figure>
   </section>
 
-  <section class="project-prose">
-    <h2 class="prose-h2">Coming soon</h2>
-    <p>
-      This case study is still being written. In the meantime, see the
-      preprint and the code repository linked below.
-    </p>
+  <figure class="prose-figure"> Bivariate Map
+      <img src="BivariateNewCropped.jpg"
+           alt="Map of the coefficient values for each variable used the the GWR." />
+      <figcaption>Overlap in DC between higher education and veteran status.</figcaption>
+    </figure>
+
+  <section class="project-gallery">
+    <h2 class="prose-h2">Hot Spot Analysis</h2>
+    <p class="prose-p"> Local Moran's I and Getis-Ord Gi* analysis on death rate caused by behavioral and mental health disorders in the South East United States.</p>
+    <figure class="gallery" id="gwr-gallery">
+      <div class="gallery-viewport">
+        <img class="gallery-image" src="LayoutMoransNewCropped.jpg" alt="">
+        <button class="gallery-arrow gallery-prev" aria-label="Previous photo">&#10094;</button>
+        <button class="gallery-arrow gallery-next" aria-label="Next photo">&#10095;</button>
+        <div class="gallery-dots"></div>
+      </div>
+      <figcaption class="gallery-caption">Local R-squared values for the green colorway model.</figcaption>
+    </figure>
+  </section>
+  
 
   <section class="project-back">
     <a href="projects.html" class="link-primary">← Back to all work</a>
@@ -132,12 +147,17 @@
 <script src="components.js"></script>
   <script>
   document.querySelectorAll('.gallery').forEach(gallery => {
-    const images = [
+   const galleryData = {
+    'acs-gallery': [
       { src: 'SplineNewCropped.jpg', caption: 'Comparison of the RVA DEM to a tension and regularized spline.' },
       { src: 'KrigingNewWNeatCropped.jpg', caption: 'Comparison of RVA DEM to kriging model.' },
       { src: 'IDW4NewCropped.jpg', caption: 'Comparison of RVA DEM andInverse Distance Weighted 4.' }
       // add more entries here — each one gets its own caption automatically
-    ];
+    ],
+    'gwr-gallery': [
+      { src: 'LayoutMoransNewCropped.jpg', caption: 'Local Morans I analysis using different neighborhood definitions.' },
+      { src: 'GetisNewCropped.jpg', caption: 'Getis-Ord GI* analysis using different neighborhood definitions.' },
+    ]
 
     let index = 0;
     const img = gallery.querySelector('.gallery-image');
