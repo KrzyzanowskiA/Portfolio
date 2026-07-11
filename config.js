@@ -202,9 +202,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
   // CONTACT PAGE — what to say on the contact page
   // =========================================================
 
-  contactLead: `I am open to conversations about GIS, cartography,
-                community-engaged research, and full-time roles
-                starting summer 2026.`,
+  contactLead: `For the summer of 2027 I am looking for an internship in spatial analysis, cartography, or  planning.`,
 
 
   // =========================================================
