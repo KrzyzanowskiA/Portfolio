@@ -170,7 +170,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
 
     {
       slug:        "kde-traffic",
-      title:       "Location allocation and Network analysis",
+      title:       "Location Allocation and Network Analysis",
       year:        "2024",
       type:        "Spatial Analysis",
       thumbnail:   "LocationAllocationCropped.jpg",
