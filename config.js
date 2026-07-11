@@ -163,21 +163,19 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
       type:        "Spatial Analysis",
       thumbnail:   "GWRNewGreenCropped copy.jpg",
       blurb:       `Different analyses maps using skills used in my Advanced GIScience course.`,
-      tags:        ["R", "GLM", "Monte Carlo", "Research"],
-      detailPage:  "project-acs-uncertainty.html",
+     /* tags:        ["R", "GLM", "Monte Carlo", "Research"], */
+     detailPage:  "project-acs-uncertainty.html",
       featured:    true,
     },
 
     {
       slug:        "kde-traffic",
-      title:       "Where the Crashes Cluster",
+      title:       "Location allocation and Network analysis",
       year:        "2024",
       type:        "Spatial Analysis",
       thumbnail:   "images/projects/kde-traffic-thumb.svg",
-      blurb:       `A kernel density analysis of three years of
-                    traffic-accident data in Gainesville, Florida, with
-                    an interactive bandwidth control.`,
-      tags:        ["QGIS", "Python", "Leaflet", "KDE"],
+      blurb:       `A network analysis and location allocation for pizzeria locations in Giles county, Virginia, and where a new location should go.`,
+    /*  tags:        ["QGIS", "Python", "Leaflet", "KDE"], */
       detailPage:  "project-kde-traffic.html",
       featured:    true,
     },
