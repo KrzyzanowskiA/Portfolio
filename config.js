@@ -148,7 +148,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
       title:       "Second Street Through Time",
       year:        "2026",
       type:        "Community Mapping",
-      thumbnail:   "SecondSTreetMap-2.jpg",
+      thumbnail:   "SecondSTreetCool.jpg",
       blurb:       `A web application showcasing the changing streetscape of Second Street within the Jackson Ward neighborhood,
       created with the Historic Jackson Ward Association.`,
      /* tags:        ["ArcGIS Pro", "Python", "MapLibre", "Community-Engaged"],*/
