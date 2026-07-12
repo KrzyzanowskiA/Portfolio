@@ -173,7 +173,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
       title:       "Location Allocation and Network Analysis",
       year:        "2024",
       type:        "Spatial Analysis",
-      thumbnail:   "LocationAllocationCropped.jpg",
+      thumbnail:   "LocationAllocationNew.jpg",
       blurb:       `A network analysis and location allocation for pizzeria locations in Giles county, Virginia, and where a new location should go.`,
     /*  tags:        ["QGIS", "Python", "Leaflet", "KDE"], */
       detailPage:  "project-kde-traffic.html",
