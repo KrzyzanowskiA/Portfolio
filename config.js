@@ -30,7 +30,7 @@ const CONFIG = {
   linkedin: "https://linkedin.com/in/anna-krzyzanowski",
   website:  "",   // leave as "" to hide
 
-  headshot: "images/headshot.svg",
+  headshot: "Headshot.jpg",
 
 
   // =========================================================
@@ -177,22 +177,20 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
       blurb:       `A network analysis and location allocation for pizzeria locations in Giles county, Virginia, and where a new location should go.`,
     /*  tags:        ["QGIS", "Python", "Leaflet", "KDE"], */
       detailPage:  "project-kde-traffic.html",
-      featured:    true,
+      featured:    false,
     },
 
     // Example of a non-featured project (will appear on /projects only):
     {
       slug:        "sanborn-mosaic",
-      title:       "Stitching the Sanborn Atlases of Richmond",
-      year:        "2023",
-      type:        "Historical GIS",
+      title:       "Hollowing of Second Street: Land Use, Interstates, and Disinvestment in the Center of Black Capitalism",
+      year:        "2026",
+      type:        "Spatial Analysis",
       thumbnail:   "images/projects/sanborn-mosaic-thumb.svg",
-      blurb:       `Georeferenced and mosaicked a set of 1905 Sanborn fire
-                    insurance maps into a single cloud-optimized GeoTIFF
-                    for use in archival research.`,
-      tags:        ["ArcGIS Pro", "GDAL", "COG", "Archives"],
+      blurb:       `A look into how parcel use along Second Street within the Jackson Ward neighborhood changed over time.`,
+     /* tags:        ["ArcGIS Pro", "GDAL", "COG", "Archives"], */
       detailPage:  "project-sanborn-mosaic.html",
-      featured:    false,
+      featured:    true,
     },
 
   ],
