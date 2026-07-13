@@ -30,7 +30,7 @@ const CONFIG = {
   linkedin: "https://linkedin.com/in/anna-krzyzanowski",
   website:  "",   // leave as "" to hide
 
-  headshot: "Headshot.jpg",
+  headshot: "photoofme.jpeg",
 
 
   // =========================================================
