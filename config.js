@@ -109,7 +109,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
   skillGroups: [
     {
       label: "Desktop GIS",
-      skills: ["ESRI Ecosystem ((ArcGIS Pro, AGOL, Instant Apps, Storymaps, Dashboards, Field Maps)", "Open Street Map"]
+      skills: ["ESRI Ecosystem (ArcGIS Pro, AGOL, Instant Apps, Storymaps, Dashboards, Field Maps)", "Open Street Map"]
     },
     {
       label: "Office Suites",
@@ -169,15 +169,15 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
     },
 
     {
-      slug:        "kde-traffic",
+    /*  slug:        "kde-traffic",
       title:       "Location Allocation and Network Analysis",
       year:        "2024",
       type:        "Spatial Analysis",
       thumbnail:   "LocationAllocationNew.jpg",
       blurb:       `A network analysis and location allocation for pizzeria locations in Giles county, Virginia, and where a new location should go.`,
     /*  tags:        ["QGIS", "Python", "Leaflet", "KDE"], */
-      detailPage:  "project-kde-traffic.html",
-      featured:    false,
+     /* detailPage:  "project-kde-traffic.html",
+      featured:    false, */
     },
 
     // Example of a non-featured project (will appear on /projects only):
