@@ -111,9 +111,9 @@
   }
   .gallery-row .gallery-text .prose-p {
     margin-bottom: 0;
-     }
-  /* NEW: styles the per-slide caption text that updates as the carousel changes */
-    .gallery-row .gallery-text .gallery-caption-text {
+  }
+  /* NEW: caption now matches normal prose formatting, just adds spacing above it */
+  .gallery-row .gallery-text .gallery-caption-text {
     margin-top: 1rem;
   }
   /* alternate rows: image on the right instead of left */
@@ -191,6 +191,8 @@
       <div class="gallery-text">
         <h2 class="prose-h2">Interpolation</h2>
         <p class="prose-p">Comparing different interpolation methods against the RVA DEM to see how each technique predicts elevation between sample points.</p>
+        <!-- NEW: caption element that updates per slide -->
+        <p class="prose-p gallery-caption-text" id="acs-gallery-caption"></p>
       </div>
     </div>
   </section>
@@ -225,6 +227,8 @@
       <div class="gallery-text">
         <h2 class="prose-h2">Hot Spot Analysis</h2>
         <p class="prose-p">Local Moran's I and Getis-Ord Gi* analysis on death rate caused by behavioral and mental health disorders in the South East United States.</p>
+        <!-- NEW: caption element that updates per slide -->
+        <p class="prose-p gallery-caption-text" id="gwr-gallery-caption"></p>
       </div>
     </div>
   </section>
@@ -257,6 +261,8 @@
     let index = 0;
     const img = gallery.querySelector('.gallery-image');
     const dotsWrap = gallery.querySelector('.gallery-dots');
+    // NEW: find the caption element for this gallery (e.g. "acs-gallery-caption")
+    const captionEl = document.getElementById(gallery.id + '-caption');
 
     images.forEach((_, i) => {
       const dot = document.createElement('span');
@@ -269,6 +275,8 @@
       index = (i + images.length) % images.length;
       img.src = images[index].src;
       img.alt = images[index].caption;
+      // NEW: update the caption text to match the current slide
+      if (captionEl) captionEl.textContent = images[index].caption;
       dotsWrap.querySelectorAll('.gallery-dot').forEach((d, di) =>
         d.classList.toggle('active', di === index)
       );
@@ -276,6 +284,9 @@
 
     gallery.querySelector('.gallery-prev').addEventListener('click', () => show(index - 1));
     gallery.querySelector('.gallery-next').addEventListener('click', () => show(index + 1));
+
+    // NEW: populate caption immediately on page load
+    show(0);
   });
 </script>
 </body>
