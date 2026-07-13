@@ -169,6 +169,15 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
     },
 
     {
+      slug:        "kde-traffic",
+      title:       "",
+      year:        "2024",
+      type:        "Spatial Analysis",
+      thumbnail:   "",
+      blurb:       ``,
+      tags:        ["QGIS", "Python", "Leaflet", "KDE"],
+    detailPage:  "project-kde-traffic.html",
+      featured:    false,
     },
 
     // Example of a non-featured project (will appear on /projects only):
