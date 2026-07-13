@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
   <style>
-    
+
 .prose-figure {
   margin: 2rem auto;
 }
@@ -27,6 +27,7 @@
   color: #666;
   text-align: center;
 }
+
   .gallery-viewport {
     position: relative;
     width: 100%;
@@ -84,6 +85,51 @@
     color: #666;
     text-align: center;
   }
+
+  /* --- New side-by-side (75/25) layout for gallery rows --- */
+  .gallery-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+    margin: 3rem 0;
+  }
+  .gallery-row .gallery-media {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .gallery-row .gallery-text {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-top: 0.25rem;
+  }
+  .gallery-row .gallery-media .prose-figure,
+  .gallery-row .gallery-media .gallery {
+    margin: 0;
+  }
+  .gallery-row .gallery-text .prose-h2 {
+    margin-top: 0;
+  }
+  .gallery-row .gallery-text .prose-p {
+    margin-bottom: 0;
+  }
+  /* alternate rows: image on the right instead of left */
+  .gallery-row.reverse {
+    flex-direction: row-reverse;
+  }
+
+  @media (max-width: 800px) {
+    .gallery-row {
+      flex-direction: column;
+    }
+    .gallery-row.reverse {
+      flex-direction: column;
+    }
+    .gallery-row .gallery-media,
+    .gallery-row .gallery-text {
+      max-width: 100%;
+      flex-basis: auto;
+    }
+  }
 </style>
 </head>
 <body>
@@ -98,62 +144,86 @@
       Miscellaneous maps made using different GIS skills.
     </p>
   </section>
-<section class="project-gallery">
-  <h2 class="prose-h2">Geographically Weighted Regression</h2>
-  <p class="prose-p">Local model coefficients and R-squared values for a GWR model predicting median household income.</p>
-  <figure class="prose-figure">
-      <img src="GWRNewGreenCropped.jpg"
-           alt="" />
-      <figcaption>Geographically weighted regression analysis looking at Median Household Income using four exploratory variables.</figcaption>
-  </figure>
-  
-  <section class="project-gallery">
-  <figure class="prose-figure">
-      <img src="CoefficientsNewCropped.jpg"
-           alt="Map of the coefficient values for each variable used the the GWR." />
-      <figcaption>Model coefficients for each independent variable.</figcaption>
-  </figure>
-</section>
-
-   </section>
-  <section class="project-gallery">
-    <h2 class="prose-h2">Interpolation</h2>
-    <p class="prose-p">Comparing different interpolation methods against the RVA DEM to see how each technique predicts elevation between sample points.
-    <figure class="gallery" id="acs-gallery">
-      <div class="gallery-viewport">
-        <img class="gallery-image" src="SplineNewCropped.jpg" alt="Map of margin of error by tract">
-        <button class="gallery-arrow gallery-prev" aria-label="Previous photo">&#10094;</button>
-        <button class="gallery-arrow gallery-next" aria-label="Next photo">&#10095;</button>
-        <div class="gallery-dots"></div>
-      </div>
-      <figcaption class="gallery-caption">Comparison of the RVA DEM to a tension and regularized spline.</figcaption>
-    </figure>
-  </section>
-  
-<section class="project-gallery">
-  <h2 class="prose-h2">Bivariate Map</h2>
-  <p class="prose-p">Map showing the overlap between those with a bachelor's degree or higher and veteran status in Washington D.C.</p>
-  <figure class="prose-figure">
-      <img src="BivariateNewCropped.jpg"
-           alt="Map of the coefficient values for each variable used the the GWR." />
-      <figcaption>Overlap in DC between higher education and veteran status.</figcaption>
-  </figure>
-</section>
 
   <section class="project-gallery">
-    <h2 class="prose-h2">Hot Spot Analysis</h2>
-    <p class="prose-p"> Local Moran's I and Getis-Ord Gi* analysis on death rate caused by behavioral and mental health disorders in the South East United States.</p>
-    <figure class="gallery" id="gwr-gallery">
-      <div class="gallery-viewport">
-        <img class="gallery-image" src="LayoutMoransNewCropped.jpg" alt="">
-        <button class="gallery-arrow gallery-prev" aria-label="Previous photo">&#10094;</button>
-        <button class="gallery-arrow gallery-next" aria-label="Next photo">&#10095;</button>
-        <div class="gallery-dots"></div>
+    <div class="gallery-row">
+      <div class="gallery-media">
+        <figure class="prose-figure">
+          <img src="GWRNewGreenCropped.jpg"
+               alt="" />
+        </figure>
       </div>
-      <figcaption class="gallery-caption">Local R-squared values for the green colorway model.</figcaption>
-    </figure>
+      <div class="gallery-text">
+        <h2 class="prose-h2">Geographically Weighted Regression</h2>
+        <p class="prose-p">Local model coefficients and R-squared values for a GWR model predicting median household income.</p>
+      </div>
+    </div>
+
+    <div class="gallery-row reverse">
+      <div class="gallery-media">
+        <figure class="prose-figure">
+          <img src="CoefficientsNewCropped.jpg"
+               alt="Map of the coefficient values for each variable used the the GWR." />
+        </figure>
+      </div>
+      <div class="gallery-text">
+        <p class="prose-p">Model coefficients for each independent variable.</p>
+      </div>
+    </div>
   </section>
-  
+
+  <section class="project-gallery">
+    <div class="gallery-row">
+      <div class="gallery-media">
+        <figure class="gallery" id="acs-gallery">
+          <div class="gallery-viewport">
+            <img class="gallery-image" src="SplineNewCropped.jpg" alt="Map of margin of error by tract">
+            <button class="gallery-arrow gallery-prev" aria-label="Previous photo">&#10094;</button>
+            <button class="gallery-arrow gallery-next" aria-label="Next photo">&#10095;</button>
+            <div class="gallery-dots"></div>
+          </div>
+        </figure>
+      </div>
+      <div class="gallery-text">
+        <h2 class="prose-h2">Interpolation</h2>
+        <p class="prose-p">Comparing different interpolation methods against the RVA DEM to see how each technique predicts elevation between sample points.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-gallery">
+    <div class="gallery-row reverse">
+      <div class="gallery-media">
+        <figure class="prose-figure">
+          <img src="BivariateNewCropped.jpg"
+               alt="Map of the coefficient values for each variable used the the GWR." />
+        </figure>
+      </div>
+      <div class="gallery-text">
+        <h2 class="prose-h2">Bivariate Map</h2>
+        <p class="prose-p">Map showing the overlap between those with a bachelor's degree or higher and veteran status in Washington D.C.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-gallery">
+    <div class="gallery-row">
+      <div class="gallery-media">
+        <figure class="gallery" id="gwr-gallery">
+          <div class="gallery-viewport">
+            <img class="gallery-image" src="LayoutMoransNewCropped.jpg" alt="">
+            <button class="gallery-arrow gallery-prev" aria-label="Previous photo">&#10094;</button>
+            <button class="gallery-arrow gallery-next" aria-label="Next photo">&#10095;</button>
+            <div class="gallery-dots"></div>
+          </div>
+        </figure>
+      </div>
+      <div class="gallery-text">
+        <h2 class="prose-h2">Hot Spot Analysis</h2>
+        <p class="prose-p">Local Moran's I and Getis-Ord Gi* analysis on death rate caused by behavioral and mental health disorders in the South East United States.</p>
+      </div>
+    </div>
+  </section>
 
   <section class="project-back">
     <a href="projects.html" class="link-primary">← Back to all work</a>
@@ -182,7 +252,6 @@
 
     let index = 0;
     const img = gallery.querySelector('.gallery-image');
-    const caption = gallery.querySelector('.gallery-caption');
     const dotsWrap = gallery.querySelector('.gallery-dots');
 
     images.forEach((_, i) => {
@@ -196,7 +265,6 @@
       index = (i + images.length) % images.length;
       img.src = images[index].src;
       img.alt = images[index].caption;
-      caption.textContent = images[index].caption;
       dotsWrap.querySelectorAll('.gallery-dot').forEach((d, di) =>
         d.classList.toggle('active', di === index)
       );
