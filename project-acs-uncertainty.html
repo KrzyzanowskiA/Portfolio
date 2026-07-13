@@ -190,7 +190,7 @@
       </div>
       <div class="gallery-text">
         <h2 class="prose-h2">Interpolation</h2>
-        <p class="prose-p">Comparing different interpolation methods against the RVA DEM to see how each technique predicts elevation between sample points.</p>
+        <p class="prose-p"></p>
         <!-- NEW: caption element that updates per slide -->
         <p class="prose-p gallery-caption-text" id="acs-gallery-caption"></p>
       </div>
@@ -244,9 +244,9 @@
   <script>
   const galleryData = {
     'acs-gallery': [
-      { src: 'SplineMetersCropped.jpg', caption: 'Comparison of the RVA DEM to a tension and regularized spline.' },
-      { src: 'KrigingMetersCropped.jpg', caption: 'Comparison of RVA DEM to kriging model.' },
-      { src: 'InterpolationMetersCropped.jpg', caption: 'Comparison of RVA DEM and Inverse Distance Weighted 4.' }
+      { src: 'SplineMetersCropped.jpg', caption: 'Regularized and tension splines were both generated using known elevation points. Using the raster calculator, the splines were compared to the DEM for accuracy. The tension spline had a mean error of 4.77 meters compared to 6.68 meters for the regularized spline showing that keeping the surface closer to the known values reduces the overshoot effect.' },
+      { src: 'KrigingMetersCropped.jpg', caption: 'A semivariogram was fit to the elevation points using a circular model and the given parameters were used to run the kriging tool. The increasing variance further from the sample points shows prediction uncertainty grows with distance from the known data. ' },
+      { src: 'InterpolationMetersCropped.jpg', caption: 'Using known elevation points, an Inverse Distance Weighted surface was generated with a power of 4 and compared against a reference SRTM DEM via raster subtraction. The error surface shows a mean difference of 68.07 meters due to the weight given to near by points.' }
     ],
     'gwr-gallery': [
       { src: 'LayoutMoransNewCropped.jpg', caption: 'Local Morans I analysis using different neighborhood definitions.' },
