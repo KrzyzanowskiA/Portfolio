@@ -18,21 +18,120 @@
 </h1>
     <p class="project-subtitle">A look into how parcel use along Second Street within the Jackson Ward neighborhood changed over time.</p>
   </section>
+ </p>
+    <ul class="project-meta-row">
+      <li><span class="meta-label">Role</span><span class="meta-value">Student Researcher</span></li>
+      <li><span class="meta-label">Partners</span><span class="meta-value">HJWA</span></li>
+      <li><span class="meta-label">Timeline</span><span class="meta-value">Summer 2026 - Present</span></li>
+      <li><span class="meta-label">Tools</span><span class="meta-value">ArcGIS Pro, HTML, MapLibre</span></li>
+    </ul>
+  </section>
+
+
+  <!-- HERO IMAGE / MAP -->
+  <!-- This is the showcase image at the top. Use your best map. -->
+  <!-- For an embedded interactive map, see the iframe snippet in EXTENSIONS.md -->
   <section class="project-hero">
     <figure>
-      <img src="images/projects/sanborn-mosaic-thumb.svg" alt="Stitching the Sanborn Atlases of Richmond" />
+     <iframe
+      src=""
+      title="Second Street Through Time interactive map"
+      style="width: 100%; height: 600px; border: none; border-radius: 8px;"
+      loading="lazy">
+    </iframe>
+      <figcaption>
+        Interactive web application of Second Street's changing streetscape across six different historical eras.
+      </figcaption>
     </figure>
   </section>
+
+
+  <!-- THE STORY (problem -> approach -> what i found) -->
   <section class="project-prose">
-    <h2 class="prose-h2">Coming soon</h2>
-    <p>This case study is still being written.</p>
+
+    <h2 class="prose-h2">The question</h2>
+    <p>
+      Second Street was the heart of the Jackson Ward neighborhood in Richmond, Virginia.
+      The street became a commercial corridor having financial institutions, insurance companies, and personal offices.
+      Due to I-95 construction going right through the neighborhood and desegregation, the street started to become more and more vacant.
+
+    </p>
+    <p>
+      This project aimed to showcase what Second Street used to be and help educate people on its important history.
+    </p>
+
+    <h2 class="prose-h2">What I did</h2>
+    <p>
+      I started this project by georeferencing and drawing out parcels on old Sanborn and city planning maps.
+      Then, I joined over directory data to see where businesses, residences, and institutions were located on the street.
+      We then selected POIs for each of the six eras to highlight some noteworthy locations located on Second Street.
+
+    </p>
+    <p>
+      We then started working on a web application to create an interactive visual for people to use.
+      We loaded in the basemaps as a tile layer and the parcels and POIs as GeoJSONS. 
+    </p>
+
+    <!-- Inline supporting image -->
+   <!-- 
+    <figure class="prose-figure">
+      <img src="images/projects/tree-equity-process.svg"
+           alt="Diagram showing the pipeline from LIDAR raster to parcel statistics to block ranking" />
+      <figcaption>The analysis pipeline.</figcaption>
+    </figure>
+    -->
+
+    <h2 class="prose-h2">What I found</h2>
+    <p>
+      From this app we were able to observe how the streetscape changed over different eras.
+      Starting off as mainly residential, changing to majority commercial, and to today’s layout.
+      The web application allows people to see this change and how I-95 splitting Second Street was detrimental to businesses. 
+    </p>
+
+    <h2 class="prose-h2">What I learned</h2>
+    <p>
+      Though none of the GIS concepts used in this project were new to me, I learned lots of new things.
+      Through working on the web application, I had my first exposure to coding.
+      More importantly, this project taught me the importance of working with a community on things that are important to them.
+
+    </p>
+
   </section>
+
+
+  <!-- LINKS / DELIVERABLES -->
+  <section class="project-links-section">
+    <div class="section-head">
+      <span class="section-num">→</span>
+      <h2 class="section-title">Deliverables</h2>
+    </div>
+    <ul class="link-list">
+      <li>
+        <a href="https://redican.github.io/SecondStreetApplication/jackson_ward_maplibre_v10.html" class="link-primary">Web application →</a>
+        <span class="link-note">Application hosted on GitHub Pages.</span>
+      </li>
+      <li>
+        <a href="https://github.com/redican/SecondStreetApplication" class="link-primary">GitHub repo →</a>
+        <span class="link-note">HTML pipeline and GeoJSONs.</span>
+      </li>
+      <li>
+    
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- BACK TO PORTFOLIO -->
   <section class="project-back">
     <a href="projects.html" class="link-primary">← Back to all work</a>
   </section>
+
 </main>
+
 <footer id="site-footer" class="site-footer"></footer>
+
 <script src="config.js"></script>
 <script src="components.js"></script>
 </body>
+</html>
 </html>
