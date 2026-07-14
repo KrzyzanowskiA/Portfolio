@@ -38,8 +38,8 @@ const CONFIG = {
   // 1-2 sentences. Keep it punchy.
   // =========================================================
 
-  shortBio: `Sophomore at the University of Richmond studying Geography, Data Science, and Biology interested in ecology and using spatial
-  and data to work on projects that actually matter.`,
+  shortBio: `Sophomore at the University of Richmond studying Geography, Data Science and Statistics, and Biology interested in ecology and using spatial
+  data to work on projects that actually matter.`,
 
 
   // =========================================================
@@ -48,7 +48,7 @@ const CONFIG = {
   // To split into paragraphs, use \n\n between them.
   // =========================================================
 
-  longBio: `I am a sophomore at the University of Richmond studying Geography, Data Science, and Biology. My goal is to use spatial data and analysis to answer the questions communities are asking.
+  longBio: `I am a sophomore at the University of Richmond studying Geography, Data Science, and Biology. My goal is to use spatial data and analysis to work on projects that actually matter.
 
 In 2026, I was a Summer Research Fellow in the University of Richmond’s Spatial Analysis Lab, where I worked on a web application showcasing the changes along Second Street in Jackson Ward, Richmond, Virginia. The app will be featured at the Black History Museum & Culture Center of Virginia. Alongside this, we’re studying how land change use along the street has changed over time, tracking how parcel use changed over time, which we’re presenting as a poster at upcoming conferences. 
 
@@ -174,7 +174,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
       title:       "Hollowing of Second Street: Land Use, Interstates, and Disinvestment in the Center of Black Capitalism",
       year:        "2026",
       type:        "Spatial Analysis",
-      thumbnail:   "images/projects/sanborn-mosaic-thumb.svg",
+      thumbnail:   "PlaceHolder.jpeg",
       blurb:       `A look into how parcel use along Second Street within the Jackson Ward neighborhood changed over time.`,
      /* tags:        ["ArcGIS Pro", "GDAL", "COG", "Archives"], */
       detailPage:  "project-sanborn-mosaic.html",
