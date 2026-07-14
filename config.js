@@ -50,8 +50,7 @@ const CONFIG = {
 
   longBio: `I am a sophomore at the University of Richmond studying Geography, Data Science, and Biology. My goal is to use spatial data and analysis to work on projects that actually matter.
 
-In 2026, I was a Summer Research Fellow in the University of Richmond’s Spatial Analysis Lab, where I worked on a web application showcasing the changes along Second Street in Jackson Ward, Richmond, Virginia. The app will be featured at the Black History Museum & Culture Center of Virginia. Alongside this, we’re studying how land change use along the street has changed over time, tracking how parcel use changed over time, which we’re presenting as a poster at upcoming conferences. 
-
+In 2026, I was a Summer Research Fellow in the University of Richmond’s Spatial Analysis Lab, where I worked on a web application showcasing the changes along Second Street in Jackson Ward, Richmond, Virginia. The app will be featured at the Black History Museum & Culture Center of Virginia. Alongside this, we’re studying how land use along the street has changed over time, tracking how parcel use shifted over time, which we’re presenting as a poster at upcoming conferences. 
 
 Outside of GIS, I dabble in photography (I have an unreasonable number of photos of the campus squirrels), watercolor, and writing short stories.
 
@@ -96,7 +95,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
       role:    "Mosquito Control Intern",
       org:     "York County, Mosquito Control",
       years:   "Summer 2025",
-      blurb:   "Trapped, tested, and identified 32 species of mosquito while also working on community outreach."
+      blurb:   "Trapped, tested, and identified 32 species of mosquitoes while also working on community outreach."
     },
   ],
 
