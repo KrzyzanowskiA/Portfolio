@@ -168,18 +168,6 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
       featured:    true,
     },
 
-    {
-      slug:        "kde-traffic",
-      title:       "",
-      year:        "2024",
-      type:        "Spatial Analysis",
-      thumbnail:   "",
-      blurb:       ``,
-      tags:        ["QGIS", "Python", "Leaflet", "KDE"],
-    detailPage:  "project-kde-traffic.html",
-      featured:    false,
-    },
-
     // Example of a non-featured project (will appear on /projects only):
     {
       slug:        "sanborn-mosaic",
@@ -191,6 +179,17 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
      /* tags:        ["ArcGIS Pro", "GDAL", "COG", "Archives"], */
       detailPage:  "project-sanborn-mosaic.html",
       featured:    true,
+    },
+     {
+      slug:        "kde-traffic",
+      title:       "",
+      year:        "2024",
+      type:        "Spatial Analysis",
+      thumbnail:   "",
+      blurb:       ``,
+      tags:        ["QGIS", "Python", "Leaflet", "KDE"],
+    detailPage:  "project-kde-traffic.html",
+      featured:    false,
     },
 
   ],
