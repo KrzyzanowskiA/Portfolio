@@ -92,7 +92,60 @@
       We then started working on a web application to create an interactive visual for people to use.
       We loaded in the basemaps as a tile layer and the parcels and POIs as GeoJSONS. 
     </p>
+<!-- PROCESS FLOWCHART -->
+  <section class="project-prose">
+    <h2 class="prose-h2">The process</h2>
+    <figure class="prose-figure">
+      <svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; font-family: 'Inter Tight', sans-serif;">
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#6E576B" />
+          </marker>
+        </defs>
 
+        <!-- Step boxes -->
+        <!-- 1 -->
+        <rect x="10" y="60" width="160" height="100" rx="6" fill="#aec0db" stroke="#6E576B" stroke-width="1.5"/>
+        <text x="90" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#221432">Old Sanborn and planning maps were obtained and georeferenced. For the five historic
+        <text x="90" y="113" text-anchor="middle" font-size="12" fill="#482a6a">base maps, each parcel along Second Street was then drawn out and the addresses were then added.</text>
+        <text x="90" y="128" text-anchor="middle" font-size="12" fill="#482a6a">Base maps were then clipped to be the same size and center Second Street</text>
+
+        <!-- 2 -->
+        <rect x="200" y="60" width="160" height="100" rx="6" fill="#aec0db" stroke="#6E576B" stroke-width="1.5"/>
+        <text x="280" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#221432">Digitize</text>
+        <text x="280" y="113" text-anchor="middle" font-size="12" fill="#482a6a">Draw parcels</text>
+        <text x="280" y="128" text-anchor="middle" font-size="12" fill="#482a6a">per era</text>
+
+        <!-- 3 -->
+        <rect x="390" y="60" width="160" height="100" rx="6" fill="#aec0db" stroke="#6E576B" stroke-width="1.5"/>
+        <text x="470" y="88" text-anchor="middle" font-size="13" font-weight="600" fill="#221432">Join directory</text>
+        <text x="470" y="106" text-anchor="middle" font-size="13" font-weight="600" fill="#221432">data</text>
+        <text x="470" y="126" text-anchor="middle" font-size="12" fill="#482a6a">Businesses, residences,</text>
+        <text x="470" y="140" text-anchor="middle" font-size="12" fill="#482a6a">institutions</text>
+
+        <!-- 4 -->
+        <rect x="580" y="60" width="160" height="100" rx="6" fill="#aec0db" stroke="#6E576B" stroke-width="1.5"/>
+        <text x="660" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#221432">Select POIs</text>
+        <text x="660" y="113" text-anchor="middle" font-size="12" fill="#482a6a">Noteworthy sites</text>
+        <text x="660" y="128" text-anchor="middle" font-size="12" fill="#482a6a">for each of 6 eras</text>
+
+        <!-- 5 (highlighted final step) -->
+        <rect x="740" y="45" width="150" height="130" rx="6" fill="#fbd7cf" stroke="#3e0627" stroke-width="1.5"/>
+        <text x="815" y="80" text-anchor="middle" font-size="13" font-weight="600" fill="#3e0627">Build web app</text>
+        <text x="815" y="100" text-anchor="middle" font-size="12" fill="#221432">Tile basemaps +</text>
+        <text x="815" y="115" text-anchor="middle" font-size="12" fill="#221432">GeoJSON layers</text>
+        <text x="815" y="133" text-anchor="middle" font-size="12" fill="#221432">(parcels + POIs)</text>
+        <text x="815" y="151" text-anchor="middle" font-size="12" fill="#221432">in MapLibre</text>
+
+        <!-- Arrows -->
+        <line x1="170" y1="110" x2="196" y2="110" stroke="#6E576B" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <line x1="360" y1="110" x2="386" y2="110" stroke="#6E576B" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <line x1="550" y1="110" x2="576" y2="110" stroke="#6E576B" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <line x1="740" y1="110" x2="736" y2="110" stroke="#6E576B" stroke-width="1.5" marker-end="url(#arrow)"/>
+      </svg>
+      <figcaption>From archival maps to an interactive web application, in five steps.</figcaption>
+    </figure>
+  </section>
     <!-- Inline supporting image -->
    <!-- 
     <figure class="prose-figure">
