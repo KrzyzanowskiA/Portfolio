@@ -101,7 +101,7 @@
 }
 */
 
-/* ---------- THEME 7: Brown ----------*/
+/* ---------- THEME 7: Brown ----------
 :root {
   --bg:           #c4cfe0;
   --bg-alt:       #aec0db;
@@ -114,6 +114,20 @@
   --paper-grain:  rgba(0, 0, 0, 0.022);
 }
 
+*/
+
+/* ---------- THEME 8: Green ----------*/
+:root {
+  --bg:           #dfeadf;
+  --bg-alt:       #B7D2B8;
+  --ink:          #3D4A3D;
+  --ink-soft:     #495449;
+  --ink-faint:    #545e54;
+  --rule:         #9b8f7a;
+  --accent:       #2f4a3a;
+  --accent-soft:  #466C4B;
+  --paper-grain:  rgba(0, 0, 0, 0.022);
+}
 
 
 /* ============================================================
