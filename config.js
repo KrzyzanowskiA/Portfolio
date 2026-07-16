@@ -180,7 +180,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
       featured:    true,
     },
      {
-      slug:        "kde-traffic",
+    /*  slug:        "kde-traffic",
       title:       "",
       year:        "2024",
       type:        "Spatial Analysis",
@@ -188,7 +188,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
       blurb:       ``,
       tags:        ["QGIS", "Python", "Leaflet", "KDE"],
     detailPage:  "project-kde-traffic.html",
-      featured:    false,
+      featured:    false, */
     },
 
   ],
