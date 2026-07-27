@@ -173,7 +173,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
       title:       "Hollowing of Second Street: Land Use, Interstates, and Disinvestment in the Center of Black Capitalism",
       year:        "2026",
       type:        "Spatial Analysis",
-      thumbnail:   "PlaceHolder.jpeg",
+      thumbnail:   "Posters-2.jpg",
       blurb:       `A look into how parcel use along Second Street within the Jackson Ward neighborhood changed over time.`,
      /* tags:        ["ArcGIS Pro", "GDAL", "COG", "Archives"], */
       detailPage:  "project-sanborn-mosaic.html",
