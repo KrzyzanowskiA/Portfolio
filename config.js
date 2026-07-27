@@ -179,17 +179,7 @@ For the summer of 2027 I am looking for an internship in spatial analysis, carto
       detailPage:  "project-sanborn-mosaic.html",
       featured:    true,
     },
-     {
-    /*  slug:        "kde-traffic",
-      title:       "",
-      year:        "2024",
-      type:        "Spatial Analysis",
-      thumbnail:   "",
-      blurb:       ``,
-      tags:        ["QGIS", "Python", "Leaflet", "KDE"],
-    detailPage:  "project-kde-traffic.html",
-      featured:    false, */
-    },
+
 
   ],
 
